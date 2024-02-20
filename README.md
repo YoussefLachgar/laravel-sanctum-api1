@@ -28,10 +28,16 @@ Request body: { "email": "john@example.com", "password": "secret" }
 ### Logout: POST /api/logout
 Invalidate the user's API token.
 Requires authentication.
+
 ## Tasks:
+
 GET /api/tasks: Retrieve all tasks for the authenticated user.
+
 POST /api/tasks: Create a new task for the authenticated user.
+
 GET /api/tasks/{id}: Retrieve a specific task.
+
 PUT /api/tasks/{id}: Update a task.
+
 DELETE /api/tasks/{id}: Delete a task.
 
