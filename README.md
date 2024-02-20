@@ -17,3 +17,21 @@ Task Management: Users can perform CRUD operations on tasks, including creating,
 Authentication: Utilizes Laravel Sanctum for token-based API authentication.
 Authorization: Implements authorization checks to ensure users can only access their own tasks.
 
+## API Endpoints
+
+# Register: POST /api/register
+Create a new user account.
+Request body: { "name": "John Doe", "email": "john@example.com", "password": "secret" }
+# Login: POST /api/login
+Authenticate a user and generate an API token.
+Request body: { "email": "john@example.com", "password": "secret" }
+# Logout: POST /api/logout
+Invalidate the user's API token.
+Requires authentication.
+# Tasks:
+GET /api/tasks: Retrieve all tasks for the authenticated user.
+POST /api/tasks: Create a new task for the authenticated user.
+GET /api/tasks/{id}: Retrieve a specific task.
+PUT /api/tasks/{id}: Update a task.
+DELETE /api/tasks/{id}: Delete a task.
+
